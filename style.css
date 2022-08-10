@@ -1,0 +1,343 @@
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+
+font-weights for Ubuntu 300 Light 700 Bold
+*/
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+header {
+  background-color: black;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.navIcon {
+  width: 72px;
+}
+
+.hidden {
+  display: none;
+}
+
+.nav-toggle {
+  display: none;
+  position: absolute;
+  top: 13px;
+  right: 32px;
+}
+
+.open {
+  height: 100vh;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 8px; 
+}
+
+img {
+  max-width: 100%;
+}
+
+.large-margin {
+  margin-top: 256px;
+}
+
+.medium-margin {
+  margin-top: 192px;
+}
+
+.small-margin {
+  margin-top: 128px;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.hide-small {
+  display: none;
+}
+
+.border-button {
+  background-color: black;
+  color: white;
+  border-style: solid;
+  border-color: white;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 0.8em 1.45em;
+  transition: color 0.15s, background-color 0.15s, opacity 0.15s;
+  cursor: pointer;
+}
+
+.border-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.border-button:active {
+  opacity: 85%;
+}
+
+.btn-white {
+  background-color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: black;
+  padding: 0.8em 1.45em;
+  border-style: solid;
+  border-radius: 6px;
+  border-color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s, border-style 0.15s, border-color 0.15s;
+}
+
+.btn-white:hover {
+  background-color: black;
+  color: white;
+  border-style: solid;
+  border-color: white;
+  padding: 0.8em 1.45em;
+}
+
+.btn-white:active {
+  background-color: white;
+  color: black;
+}
+
+.btn-black {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  padding: 0.85em 1.75em;
+  border-style: none;
+  border-radius: 0.5em;
+  font-size: 1.25rem;
+  transition: opacity 0.15s;
+  cursor: pointer;
+}
+
+.btn-black:hover {
+  opacity: 85%;
+}
+
+.btn-black:active {
+  opacity: 75%;
+}
+
+.white {
+  color: white;
+}
+
+.paragraph {
+  max-width: 900px;
+  line-height: 1.75;
+}
+
+.h1-bold {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.h2-bold {
+  font-size: 2.25rem;
+}
+
+.h2-light {
+  font-size: 2.25rem;
+  font-weight: 300;
+}
+
+.h3-bold {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.h3-light {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.h4-bold {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.h5-bold {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.h5-light {
+  font-size: 0.85rem;
+  font-weight: 300;
+}
+
+.nav-text-bold {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.nav-text-bold:hover {
+  opacity: 85%;
+}
+
+.btn-margin-top {
+  margin-top: 48px;
+}
+
+@media (min-width: 900px) {
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-row {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: 700px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hide-large {
+    display: none;
+  }
+
+  .hide-small {
+    display: block;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: 0.15s ease-in-out;
+  }
+
+  .nav-text-bold {
+    font-size: 22px;
+  }
+
+  li {
+    display: block;
+    text-align: center;
+    padding: 24px 0;
+  }
+
+  li a {
+    font-size: 22px;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .border-button {
+    border-style: none;
+    font-size: 22px;
+    padding: 0;
+  }
+
+  .border-button:hover {
+    background-color: black;
+    color: white;
+    opacity: 85%;
+  }
+
+  .border-button:active {
+    opacity: 75%;
+  }
+
+  .btn-white {
+    background-color: black;
+    color: white;
+    padding: 0;
+    font-size: 22px;
+    border-style: none;
+  }
+
+  .btn-white:hover {
+    border-style: none;
+    opacity: 85%;
+  }
+
+  .btn-white:active {
+    opacity: 75%;
+    background-color: black;
+    color: white;
+  }
+}
